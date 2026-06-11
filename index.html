@@ -161,7 +161,6 @@
         <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>In robot imitation learning, influence functions provide a principled approach to quantify each demonstration's effect on robot task outcomes, yet scaling them to billion-parameter Vision-Language-Action (VLA) models is limited by computational and multitask bottlenecks. To this end, we propose ATHENA, an influence function framework tailored for multitask VLA data curation at billion-parameter scale. Concretely, it leverages the Kronecker structure of linear-layer gradients to reduce projection cost, and approximates dense Hessian inversion with a rank-$r$ Random Truncated Approximation, achieving about a 313.4$\times$ speedup in influence computation. Furthermore, ATHENA formulates global and local interactive influence to balance data curation across 50 jointly trained tasks. Extensive evaluations on RoboTwin 2.0 and real-robot deployment, covering 9.34 and 6.90 hours of demonstrations, respectively, show that ATHENA matches or exceeds full-data joint fine-tuning using only 50\% of demonstrations in simulation and 66.7\% of data across six real-robot tasks. Overall, ATHENA demonstrates its effectiveness for data curation in billion-parameter multitask VLA fine-tuning.
-               Project website: <a href="https://sii-quantum.github.io/ATHENA.github.io/" target="_blank">https://sii-quantum.github.io/ATHENA.github.io/</a></p>
         </div>
       </div>
     </div>
@@ -183,36 +182,36 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Real Robot ALOHA Demonstration</h2>
     <p class="content has-text-centered">
-      We evaluate ATHENA on six real-robot ALOHA tasks spanning different difficulty levels.
+      We evaluate ATHENA on six real-robot ALOHA tasks spanning three different difficulty levels.
     </p>
 
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 1: Pick Fruits</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 1: Pick Fruits (simple)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">ATHENA (Ours)</h4>
+        <h4 class="title is-5">ATHENA (66.7%, Ours)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/a1.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/a2.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Full-Data (100%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/a3.mp4" type="video/mp4">
         </video>
       </div>
     </div><hr>
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 2: Wipe Board</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 2: Wipe Board (simple)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
@@ -223,114 +222,114 @@
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/b2.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Full-Data (100%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/b3.mp4" type="video/mp4">
         </video>
       </div>
     </div><hr>
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 3: Stack Bowls</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 3: Stack Bowls (medium)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">ATHENA (Ours)</h4>
+        <h4 class="title is-5">ATHENA (66.7%, Ours)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/c1.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="./static/videos/real_robot/c2.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/c3.mp4" type="video/mp4">
         </video>
       </div>
+
+      <div class="column is-one-third has-text-centered">
+        <h4 class="title is-5">Full-Data (100%)</h4>
+        <video autoplay controls muted loop playsinline width="100%">
+          <source src="./static/videos/real_robot/c2.mp4" type="video/mp4">
+        </video>
+      </div>
     </div><hr>
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 4: Box Return</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 4: Box Return (medium)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">ATHENA (Ours)</h4>
+        <h4 class="title is-5">ATHENA (66.7%, Ours)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/d1.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/d2.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Full-Data (100%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/d3.mp4" type="video/mp4">
         </video>
       </div>
     </div><hr>
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 5: Seal Stamping</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 5: Seal Stamping (challenging)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">ATHENA (Ours)</h4>
+        <h4 class="title is-5">ATHENA (66.7%, Ours)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/e1.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/e2.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Full-Data (100%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/e3.mp4" type="video/mp4">
         </video>
       </div>
     </div><hr>
 
-    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 6: Shelf Retrieval</h3>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 2rem;">Task 6: Shelf Retrieval (challenging)</h3>
     <div class="columns is-centered">
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">ATHENA (Ours)</h4>
+        <h4 class="title is-5">ATHENA (66.7%, Ours)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/f1.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Random (66.7%)</h4>
+        <h4 class="title is-5">Oracle (66.7%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/f2.mp4" type="video/mp4">
         </video>
       </div>
 
       <div class="column is-one-third has-text-centered">
-        <h4 class="title is-5">Joint-100% (Origin)</h4>
+        <h4 class="title is-5">Full-Data (100%)</h4>
         <video autoplay controls muted loop playsinline width="100%">
           <source src="./static/videos/real_robot/f3.mp4" type="video/mp4">
         </video>
