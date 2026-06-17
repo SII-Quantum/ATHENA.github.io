@@ -25,7 +25,6 @@ body {
 }
 
 .teaser-figure {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0;
 }
@@ -39,7 +38,7 @@ body {
 
 .teaser-caption {
   margin-top: 1rem;
-  text-align: left;
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.65;
 }
