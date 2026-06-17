@@ -38,7 +38,7 @@ body {
 
 .teaser-caption {
   margin-top: 1rem;
-  text-align: justify;
+  text-align: justify !important;
   font-size: 1rem;
   line-height: 1.65;
 }
