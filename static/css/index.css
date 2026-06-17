@@ -20,18 +20,19 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
-  padding-top: 1.5rem;
+  padding-top: 0.75rem;
   padding-bottom: 1.5rem;
 }
 
 .teaser-figure {
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 
 .teaser-image {
   display: block;
-  width: 100%;
+  width: 88%;
   height: auto;
   margin: 0 auto;
 }
@@ -41,6 +42,9 @@ body {
   text-align: justify !important;
   font-size: 1rem;
   line-height: 1.65;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
