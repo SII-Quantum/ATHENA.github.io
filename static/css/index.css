@@ -18,11 +18,6 @@ body {
 }
 
 
-.teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
-}
-
 .teaser {
   font-family: 'Google Sans', sans-serif;
   padding-top: 1.5rem;
@@ -30,20 +25,21 @@ body {
 }
 
 .teaser-figure {
-  margin: 0;
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .teaser-image {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
 .teaser-caption {
   margin-top: 1rem;
+  text-align: left;
   font-size: 1rem;
   line-height: 1.65;
 }
